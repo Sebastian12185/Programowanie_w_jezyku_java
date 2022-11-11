@@ -11,7 +11,7 @@ public class Main {
         Human me = new Human();
         me.firstName = "Sebastian";
         me.lastName = "Jakubek";
-        me.setSalary(1000);
+        me.setSalary(12000);
         Animal dog = new Animal("dog");
         System.out.println("Waga psa: "+dog.weight);
         dog.takeForWalk();
@@ -21,9 +21,9 @@ public class Main {
         me.pet = dog;
         System.out.println(me.pet.specie);
         System.out.println(me);
-        Car car = new Car("VW","GOLF",10.5,"Black",2007,"Sedan");
-        me.car = car;
-        System.out.println(car);
+        Car car = new Car("VW","GOLF",10.5,"Black",2007,"Sedan", 10000.0);
+        me.setCar(car);
+        System.out.println(me.getCar());
         System.out.println("Dnia: " + dateNow + " O godzinie: " + timeNow +" Pobrano inforamcje o wypłacie. Aktualna wypłata: " + me.getSalary());
 
     }
