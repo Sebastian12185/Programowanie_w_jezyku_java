@@ -1,8 +1,17 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
+        DateTimeFormatter date = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter time = DateTimeFormatter.ofPattern("HH:mm");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String dateNow = date.format(localDateTime);
+        String timeNow = time.format(localDateTime);
+
         Human me = new Human();
         me.firstName = "Sebastian";
         me.lastName = "Jakubek";
+        me.setSalary(1000);
         Animal dog = new Animal("dog");
         System.out.println("Waga psa: "+dog.weight);
         dog.takeForWalk();
@@ -15,5 +24,7 @@ public class Main {
         Car car = new Car("VW","GOLF",10.5,"Black",2007,"Sedan");
         me.car = car;
         System.out.println(car);
+        System.out.println("Dnia: " + dateNow + " O godzinie: " + timeNow +" Pobrano inforamcje o wypłacie. Aktualna wypłata: " + me.getSalary());
+
     }
 }
