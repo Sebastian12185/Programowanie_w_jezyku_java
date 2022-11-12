@@ -1,3 +1,5 @@
+package devices;
+
 public class Car {
     final String Producent;
     final String Model;
@@ -6,8 +8,8 @@ public class Car {
     Integer Rocznik;
     String Typ;
 
-    Double Ofkoz;
-    Car(String Producent, String Model, Double Przebieg, String Kolor, Integer Rocznik, String Typ, Double Ofkoz){
+    public Double Ofkoz;
+    public Car(String Producent, String Model, Double Przebieg, String Kolor, Integer Rocznik, String Typ, Double Ofkoz){
         this.Producent = Producent;
         this.Model = Model;
         this.Przebieg=Przebieg;
