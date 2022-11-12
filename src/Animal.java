@@ -37,4 +37,7 @@ public class Animal {
         }
 
     }
+    public String toString(){
+        return "Rodzaj zwierzęcia: "+ this.specie + " Czy żyje: "+ this.isAlive+ " Waga: "+ this.weight;
+    }
 }

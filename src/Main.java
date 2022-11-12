@@ -19,11 +19,14 @@ public class Main {
         dog.feed();
         System.out.println("Waga psa: "+dog.weight);
         me.pet = dog;
-        System.out.println(me.pet.specie);
+        System.out.println(me.pet);
         System.out.println(me);
         Car car = new Car("VW","GOLF",10.5,"Black",2007,"Sedan", 10000.0);
+        Car car2 = new Car("VW","GOLF",10.5,"Black",2007,"Sedan", 10000.0);
         me.setCar(car);
-        System.out.println(me.getCar());
+        //System.out.println(me.getCar());
+        System.out.println(car.equals(car2));
+        System.out.println(me);
         System.out.println("Dnia: " + dateNow + " O godzinie: " + timeNow +" Pobrano inforamcje o wypłacie. Aktualna wypłata: " + me.getSalary());
 
     }

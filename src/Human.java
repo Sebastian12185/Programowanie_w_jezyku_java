@@ -4,8 +4,8 @@ public class Human {
     private Car car;
     private double salary;
     public String toString(){
-        return "First Name: "+ this.firstName
-                +" Last Name: "+ this.lastName;
+        return "Imię: "+ this.firstName
+                +" Nazwisko: "+ this.lastName+ " "+ this.pet+" Samochód: "+this.car ;
     }
     public double getSalary(){
         return this.salary;
