@@ -51,4 +51,7 @@ public class Human  extends Animal {
             System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
         }
     }
+    public void beEaten() throws Exception{
+        throw new Exception("Halo Policja");
+    }
 }

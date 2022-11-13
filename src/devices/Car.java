@@ -24,4 +24,12 @@ public class Car extends Device{
         }
         return false;
     }
+
+    @Override
+    public void recharger(int percentage) {
+        System.out.println("ładuje");
+        System.out.println("ładuje");
+        System.out.println("ładuje");
+        System.out.println("naładowane");
+    }
 }

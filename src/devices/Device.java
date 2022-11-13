@@ -1,6 +1,6 @@
 package devices;
 
-public class Device {
+public abstract class Device {
     final String Producent;
     final String Model;
     String Kolor;
@@ -9,4 +9,6 @@ public class Device {
         this.Model = Model;
         this.Kolor=Kolor;
     }
+
+    abstract void recharger (int percentage);
 }

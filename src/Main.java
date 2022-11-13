@@ -1,5 +1,7 @@
 import Creatures.Animal;
+import Creatures.Pet;
 import devices.Car;
+import devices.Device;
 import devices.Phone;
 
 import java.time.LocalDateTime;
@@ -16,7 +18,7 @@ public class Main {
         me.firstName = "Sebastian";
         me.lastName = "Jakubek";
         me.setSalary(12000);
-        Animal dog = new Animal("dog");
+        Pet dog = new Pet("dog");
         System.out.println("Waga psa: "+dog.weight);
         dog.takeForWalk();
         System.out.println("Waga psa: "+dog.weight);
@@ -33,6 +35,7 @@ public class Main {
         //System.out.println(me.getCar());
         System.out.println(car.equals(car2));
         System.out.println(me);
+        car.recharger(12);
         System.out.println("Dnia: " + dateNow + " O godzinie: " + timeNow +" Pobrano inforamcje o wypłacie. Aktualna wypłata: " + me.getSalary());
 
     }
