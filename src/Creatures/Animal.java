@@ -1,3 +1,5 @@
+package Creatures;
+
 public class Animal {
     private static final Double DEFAULT_DOG_WEIGHT = 12.3;
     private static final Double DEFAULT_CAT_WEIGHT = 5.0;
@@ -5,8 +7,8 @@ public class Animal {
     private static final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
     String specie;
     Boolean isAlive;
-    Double weight;
-    Animal(String specie){
+    public Double weight;
+    public Animal(String specie){
         this.specie =specie;
         this.isAlive = true;
         switch(specie){
@@ -17,7 +19,7 @@ public class Animal {
         }
     }
 
-    void feed(){
+    public void feed(){
         if(this.isAlive) {
             this.weight += 1;
             System.out.println("dzięki za żarcie");
@@ -26,7 +28,7 @@ public class Animal {
             System.out.println("Wszystko dobrze z głową?");
         }
     }
-    void takeForWalk(){
+    public void takeForWalk(){
         if(this.isAlive){
             this.weight-=1;
             System.out.println("Dzięki za spacer");

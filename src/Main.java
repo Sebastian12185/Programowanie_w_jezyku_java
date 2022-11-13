@@ -1,4 +1,6 @@
+import Creatures.Animal;
 import devices.Car;
+import devices.Phone;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -25,6 +27,8 @@ public class Main {
         System.out.println(me);
         Car car = new Car("VW","GOLF",10.5,"Black",2007,"Sedan", 10000.0);
         Car car2 = new Car("VW","GOLF",10.5,"Black",2007,"Sedan", 10000.0);
+        Phone phoneOne = new Phone("Honor","8X","blue");
+        System.out.println(phoneOne);
         me.setCar(car);
         //System.out.println(me.getCar());
         System.out.println(car.equals(car2));

@@ -1,10 +1,18 @@
+import Creatures.Animal;
 import devices.Car;
 
-public class Human {
+public class Human  extends Animal {
     String firstName, lastName;
     Animal pet;
     private Car car;
     private double salary;
+
+    Human() {
+        super("homo sapiens");
+        salary = 0.0;
+        System.out.println("Witaj człowieku!");
+    }
+
     public String toString(){
         return "Imię: "+ this.firstName
                 +" Nazwisko: "+ this.lastName+ " "+ this.pet+" Samochód: "+this.car ;
